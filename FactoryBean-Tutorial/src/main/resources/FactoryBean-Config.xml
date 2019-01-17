@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 自定义 FactoryBean 将 Car实例创建并注入到 Person 里面  -->
+    <bean id="car" class="org.vincent.factorybean.MyCarFactoryBean">
+        <property name = "make" value ="Honda"/>
+        <property name = "year" value ="1984"/>
+    </bean>
+    <bean id="person" class="org.vincent.factorybean.bean.Person">
+        <property name="car" ref="car"/>
+    </bean>
+</beans>
