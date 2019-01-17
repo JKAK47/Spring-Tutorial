@@ -26,3 +26,5 @@ org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanIn
 [FactoryBean的实现原理与作用](https://blog.csdn.net/u013185616/article/details/52335864)
 
 [Spring FactoryBean Example](https://howtodoinjava.com/spring-core/how-to-create-beans-using-spring-factorybean/)
+
+[What's a FactoryBean?](https://spring.io/blog/2011/08/09/what-s-a-factorybean)
